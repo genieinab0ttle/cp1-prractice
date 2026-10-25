@@ -12,9 +12,9 @@ English, please. Russian or Kazakh is fine if you are stuck for a word.
 - Changed: I just updated `.github/workflows/ci.yml` to run `./scripts/test.sh` instead of `./scripts/tests.sh`. 
 
 ### 2. The pipeline tells the truth
-- Step:
-- Log line: ``
-- Changed:
+- Step: Run the tests
+- Log line: `TESTS: 5/7`
+- Changed: I changed the checking part of completion of the tasks and added if condition in `test.sh` file.
 
 ### 3. The service keeps the contract
 - Step:
