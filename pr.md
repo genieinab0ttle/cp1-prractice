@@ -18,9 +18,8 @@ English, please. Russian or Kazakh is fine if you are stuck for a word.
 
 ### 3. The service keeps the contract
 - Step:Run the tests
-- Log line: `File "/home/runner/work/cp1-prractice/cp1-prractice/tests/test_server.py", line 53, in test_notes_counts_three
-    self.assertEqual(get(self.port, "/notes"), (200, "3"))`
-- Changed: I removed minus one from here so i can get 3 len not len minus 1`self._send(200, str(len(NOTES)))-1`
+- Log line: `AssertionError: Tuples differ: (200, '2') != (200, '3')`
+- Changed: I removed minus one from here `src/server.py` so i can get 3 len not len minus 1`self._send(200, str(len(NOTES)))-1`
 
 ### 4. The image builds
 - Step: Build the image
