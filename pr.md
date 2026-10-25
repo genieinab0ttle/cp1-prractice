@@ -17,9 +17,9 @@ English, please. Russian or Kazakh is fine if you are stuck for a word.
 - Changed: I changed the checking part of completion of the tasks and added if condition in `test.sh` file.
 
 ### 3. The service keeps the contract
-- Step:
-- Log line: ``
-- Changed:
+- Step:Run the tests
+- Log line: `AssertionError: Tuples differ: (200, '2') != (200, '3')`
+- Changed: I removed minus one from here so i can get 3 len not len minus 1`self._send(200, str(len(NOTES)))-1`
 
 ### 4. The image builds
 - Step: Build the image
