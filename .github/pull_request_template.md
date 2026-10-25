@@ -7,9 +7,9 @@ English, please. Russian or Kazakh is fine if you are stuck for a word.
 -->
 
 ### 1. The pipeline runs
-- Step:
-- Log line: ``
-- Changed:
+- Step: Run the tests
+- Log line: `/home/runner/work/_temp/576c4ee2-3edb-4a88-ab98-fbffa07c4ee5.sh: line 1: ./scripts/tests.sh: No such file or directory`
+- Changed: Updated `.github/workflows/ci.yml` to run `./scripts/test.sh` instead of `./scripts/tests.sh`.
 
 ### 2. The pipeline tells the truth
 - Step:
@@ -22,6 +22,6 @@ English, please. Russian or Kazakh is fine if you are stuck for a word.
 - Changed:
 
 ### 4. The image builds
-- Step:
-- Log line: ``
-- Changed:
+- Step: Build the image
+- Log line: `#9 ERROR: failed to calculate checksum of ref 6134b6ae-8eb1-4f62-889e-a360c80bcfbf::a9tok8w9v7kgxoqcd1ca0l4zm: "/source": not found`
+- Changed: Updated `Dockerfile` to copy files from `src/` instead of the nonexistent `source/` directory.
